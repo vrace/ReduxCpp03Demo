@@ -10,7 +10,12 @@ VisibilityType AppData::visibility() const
 	return _visibility;
 }
 
-std::vector<Item>& AppData::items()
+AppData::ItemArray& AppData::items()
+{
+	return _items;
+}
+
+const AppData::ItemArray& AppData::items() const
 {
 	return _items;
 }

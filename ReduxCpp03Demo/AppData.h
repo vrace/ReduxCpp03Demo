@@ -8,16 +8,19 @@
 class AppData
 {
 public:
+	typedef std::vector<Item> ItemArray;
+
 	AppData();
 
 	VisibilityType visibility() const;
-	std::vector<Item>& items();
+	ItemArray& items();
+	const ItemArray& items() const;
 
 	size_t NextID() const;
 
 private:
 	VisibilityType _visibility;
-	std::vector<Item> _items;
+	ItemArray _items;
 };
 
 #endif
