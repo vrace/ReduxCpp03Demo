@@ -1,7 +1,8 @@
 #include "ActionNewItem.h"
+#include "AppData.h"
 
 ActionNewItem::ActionNewItem(const std::string &name)
-: _name(name)
+	: _name(name)
 {
 }
 

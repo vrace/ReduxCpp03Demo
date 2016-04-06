@@ -186,6 +186,14 @@
 			>
 		</File>
 		<File
+			RelativePath=".\ActionToggleItem.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\ActionToggleItem.h"
+			>
+		</File>
+		<File
 			RelativePath=".\AppData.cpp"
 			>
 		</File>

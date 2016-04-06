@@ -2,9 +2,7 @@
 #define __ACTION_NEW_ITEM_H__
 
 #include <string>
-#include "Action.h"
-#include "AppData.h"
-#include "Redux.h"
+#include "Action.h" 
 
 class ActionNewItem : public Action
 {
@@ -17,6 +15,6 @@ private:
 	std::string _name;
 };
 
-void ActionNewItemReducer(AppData &appData, const Action &action);
+void ActionNewItemReducer(class AppData &appData, const Action &action);
 
 #endif

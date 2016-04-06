@@ -1,9 +1,9 @@
 #include "Item.h"
 
 Item::Item(size_t id, const std::string &name)
-: _id(id)
-, _name(name)
-, _completed(false)
+	: _id(id)
+	, _name(name)
+	, _completed(false)
 {
 }
 

@@ -1,7 +1,7 @@
 #include "AppData.h"
 
 AppData::AppData()
-: _visibility(vtAll)
+	: _visibility(vtAll)
 {
 }
 

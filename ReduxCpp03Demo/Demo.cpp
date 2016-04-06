@@ -5,6 +5,7 @@
 #include "Redux.h"
 #include "AppData.h"
 #include "ActionNewItem.h"
+#include "ActionToggleItem.h"
 
 typedef ReduxStore<AppData, Action> StoreType;
 
@@ -39,6 +40,7 @@ int main(void)
 	AppData data;
 	StoreType::ReducerArray reducers;
 	reducers.push_back(ActionNewItemReducer);
+	reducers.push_back(ActionToggleItemReducer);
 
 	ReduxStore<AppData, Action> store(data, reducers);
 
@@ -47,6 +49,8 @@ int main(void)
 
 	store.Dispatch(ActionNewItem("Hello"));
 	store.Dispatch(ActionNewItem("World"));
+	store.Dispatch(ActionToggleItem(1));
+	store.Dispatch(ActionNewItem("C++"));
 
 	return 0;
 }
